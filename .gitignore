@@ -1,0 +1,9 @@
+# 忽略无关文件 or 受编译影响的文件
+
+# C++
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*/debug/
+*/.vs/

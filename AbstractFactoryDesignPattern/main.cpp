@@ -11,4 +11,4 @@ int main() {
 	DPAbstractPhone* phone = factory->getPhone();
 	phone->normalFunction();
 	return 0;
-}
+} 

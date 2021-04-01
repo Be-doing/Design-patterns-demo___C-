@@ -7,15 +7,16 @@
  **************************************************************/
 #include "DPMiPhone.h"
 #include <iostream>
+
 void DPMiPhone::baiduFunction() {
-	std::cout << "ÕâÊÇÐ¡Ã×ÊÖ»úµÄ°Ù¶ÈAPP" << std::endl;
+	std::cout << "è¿™æ˜¯å°ç±³æ‰‹æœºçš„ç™¾åº¦APP" << std::endl;
 }
 void DPMiPhone::wechatFunction() {
-	std::cout << "ÕâÊÇÐ¡Ã×ÊÖ»úµÄÎ¢ÐÅAPP" << std::endl;
+	std::cout << "è¿™æ˜¯å°ç±³æ‰‹æœºçš„å¾®ä¿¡APP" << std::endl;
 }
 void DPMiPhone::messageFunction() {
-	std::cout << "ÕâÊÇÐ¡Ã×ÊÖ»úµÄ¶ÌÐÅ¹¦ÄÜ" << std::endl;
+	std::cout << "è¿™æ˜¯å°ç±³æ‰‹æœºçš„çŸ­ä¿¡åŠŸèƒ½" << std::endl;
 }
 void DPMiPhone::douyinFunction() {
-	std::cout << "ÕâÊÇÐ¡Ã×ÊÖ»úµÄ¶¶ÒôAPP" << std::endl;
+	std::cout << "è¿™æ˜¯å°ç±³æ‰‹æœºçš„æŠ–éŸ³APP" << std::endl;
 }

@@ -22,7 +22,7 @@ class DPHuaWeiPhone : public DPAbstractPhone {
 class DPMiRouter : public DPAbstractRouter {
 	void normalRouting();
 };
-
+ 
 class DPHuaWeiRouter : public DPAbstractRouter {
 	void normalRouting();
 };

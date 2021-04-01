@@ -7,16 +7,17 @@
  **************************************************************/
 #include "DPOppoPhone.h"
 #include <iostream>
+
 void DPOppoPhone::baiduFunction() {
-	std::cout << "ÕâÊÇOPPOÊÖ»úµÄ°Ù¶ÈAPP" << std::endl;
+	std::cout << "è¿™æ˜¯OPPOæ‰‹æœºçš„ç™¾åº¦APP" << std::endl;
 }
 
 void DPOppoPhone::wechatFunction() {
-	std::cout << "ÕâÊÇOPPOÊÖ»úµÄÎ¢ÐÅAPP" << std::endl;
+	std::cout << "è¿™æ˜¯OPPOæ‰‹æœºçš„å¾®ä¿¡APP" << std::endl;
 }
 void DPOppoPhone::messageFunction() {
-	std::cout << "ÕâÊÇOPPOÊÖ»úµÄ¶ÌÐÅ¹¦ÄÜ" << std::endl;
+	std::cout << "è¿™æ˜¯OPPOæ‰‹æœºçš„çŸ­ä¿¡åŠŸèƒ½" << std::endl;
 }
 void DPOppoPhone::douyinFunction() {
-	std::cout << "ÕâÊÇOPPOÊÖ»úµÄ¶¶ÒôAPP" << std::endl;
+	std::cout << "è¿™æ˜¯OPPOæ‰‹æœºçš„æŠ–éŸ³APP" << std::endl;
 }

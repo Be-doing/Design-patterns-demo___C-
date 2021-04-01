@@ -6,14 +6,15 @@
  *  @time: 2021/3/29
  **************************************************************/
 #pragma once
-// ∆∑≈∆π§≥ß
+// ÂìÅÁâåÂ∑•ÂéÇ
 #include "DPAbstractFactory.h"
 #include "DPProduct.h"
+
 class DPMiFactory : public DPAbstractFactory {
 	 DPAbstractPhone* getPhone();
 	 DPAbstractRouter* getRouter();
 };
-
+ 
 class DPHuaWeiFactory : public DPAbstractFactory {
 	 DPAbstractPhone* getPhone();
 	 DPAbstractRouter* getRouter();

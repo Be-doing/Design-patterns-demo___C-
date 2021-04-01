@@ -6,19 +6,19 @@
  *  @time: 2021/3/29
  **************************************************************/
 #pragma once
-// ³éÏóµÄ²úÆ·Àà
+// æŠ½è±¡çš„äº§å“ç±»
 
 class DPAbstractProduct {
 
 };
 
-// ³éÏóµÄÊÖ»ú
+// æŠ½è±¡çš„æ‰‹æœº
 class DPAbstractPhone {
 public:
 	virtual void normalFunction() = 0;
 };
-
-// ³éÏóµÄÂ·ÓÉÆ÷
+ 
+// æŠ½è±¡çš„è·¯ç”±å™¨
 class DPAbstractRouter {
 public:
 	virtual void normalRouting() = 0;

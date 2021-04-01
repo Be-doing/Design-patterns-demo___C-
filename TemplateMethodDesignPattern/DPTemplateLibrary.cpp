@@ -10,7 +10,7 @@
 void DPTemplateLibrary::say() {
 	std::string res = this->getSomeString();
 	if (res.size() > 0) {
-		std::cout << std::string("ÎÒÊÕµ½ÁËlibÍâµÄ×Ö·û´®:") + res << std::endl;
+		std::cout << std::string("æˆ‘æ”¶åˆ°äº†libå¤–çš„å­—ç¬¦ä¸²:") + res << std::endl;
 	}
 	else {
 		std::cout << " say no" << std::endl;

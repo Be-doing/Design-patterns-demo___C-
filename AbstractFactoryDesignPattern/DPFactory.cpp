@@ -13,7 +13,7 @@ DPAbstractPhone* DPMiFactory::getPhone() {
 DPAbstractRouter* DPMiFactory::getRouter() {
 	return new DPMiRouter();
 }
-
+ 
 DPAbstractPhone* DPHuaWeiFactory::getPhone() {
 	return new DPHuaWeiPhone();
 }

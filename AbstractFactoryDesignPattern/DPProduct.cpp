@@ -9,17 +9,17 @@
 #include "DPProduct.h"
 
 void DPMiPhone::normalFunction() {
-	std::cout << "±ê×¼µÄÐ¡Ã×ÊÖ»ú" << std::endl;
+	std::cout << "æ ‡å‡†çš„å°ç±³æ‰‹æœº" << std::endl;
 }
-
+  
 void DPHuaWeiPhone::normalFunction() {
-	std::cout << "±ê×¼µÄ»ªÎªÊÖ»ú" << std::endl;
+	std::cout << "æ ‡å‡†çš„åŽä¸ºæ‰‹æœº" << std::endl;
 }
 
 void DPMiRouter::normalRouting() {
-	std::cout << "±ê×¼µÄÐ¡Ã×Â·ÓÉÆ÷" << std::endl;
+	std::cout << "æ ‡å‡†çš„å°ç±³è·¯ç”±å™¨" << std::endl;
 }
 
 void DPHuaWeiRouter::normalRouting() {
-	std::cout << "±ê×¼µÄ»ªÎªÂ·ÓÉÆ÷" << std::endl;
+	std::cout << "æ ‡å‡†çš„åŽä¸ºè·¯ç”±å™¨" << std::endl;
 }

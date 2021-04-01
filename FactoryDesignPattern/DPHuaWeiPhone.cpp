@@ -7,15 +7,16 @@
  **************************************************************/
 #include "DPHuaWeiPhone.h"
 #include <iostream>
+
 void DPHuaWeiPhone::baiduFunction() {
-	std::cout << "ÕâÊÇ»ªÎªÊÖ»úµÄ°Ù¶ÈAPP" << std::endl;
+	std::cout << "è¿™æ˜¯åŽä¸ºæ‰‹æœºçš„ç™¾åº¦APP" << std::endl;
 }
 void DPHuaWeiPhone::wechatFunction() {
-	std::cout << "ÕâÊÇ»ªÎªÊÖ»úµÄÎ¢ÐÅAPP" << std::endl;
+	std::cout << "è¿™æ˜¯åŽä¸ºæ‰‹æœºçš„å¾®ä¿¡APP" << std::endl;
 }
 void DPHuaWeiPhone::messageFunction() {
-	std::cout << "ÕâÊÇ»ªÎªÊÖ»úµÄ¶ÌÐÅ¹¦ÄÜ" << std::endl;
+	std::cout << "è¿™æ˜¯åŽä¸ºæ‰‹æœºçš„çŸ­ä¿¡åŠŸèƒ½" << std::endl;
 }
 void DPHuaWeiPhone::douyinFunction() {
-	std::cout << "ÕâÊÇ»ªÎªÊÖ»úµÄ¶¶ÒôAPP" << std::endl;
+	std::cout << "è¿™æ˜¯åŽä¸ºæ‰‹æœºçš„æŠ–éŸ³APP" << std::endl;
 }

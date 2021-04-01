@@ -13,7 +13,7 @@ public:
 	virtual void wechatFunction() = 0;
 	virtual void baiduFunction() = 0;
 	virtual void douyinFunction() = 0;
-
-	// Ã»ÓĞÊµÀı³ÉÔ±£¬Ôİ²»ÉùÃ÷´¿ĞéÎö¹¹
+	 
+	// æ²¡æœ‰å®ä¾‹æˆå‘˜ï¼Œæš‚ä¸å£°æ˜çº¯è™šææ„
 	// virtual ~DPPhone() = 0;
 };

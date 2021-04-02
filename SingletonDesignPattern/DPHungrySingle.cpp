@@ -6,8 +6,7 @@
  *  @time: 4/2
  **************************************************************/
 #include "DPHungrySingle.h"
-DPHungrySingle* DPHungrySingle::singleObj = nullptr;
-
+DPHungrySingle* DPHungrySingle::singleObj = new DPHungrySingle();
 
 DPHungrySingle* DPHungrySingle::getSingleObj() {
 	if (singleObj == nullptr) {

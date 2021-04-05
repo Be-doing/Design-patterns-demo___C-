@@ -8,13 +8,15 @@
 #pragma once
 #include <iostream>
 #include <string>
-class DPTemplateLibrary {
-public:
-	void say();
+class DPGamesFramework {
 protected:
-	virtual std::string getSomeString() = 0;
-};
-
-class DPSubLibrary : public DPTemplateLibrary {
-	virtual std::string getSomeString();
+	virtual bool loadingGame();
+	virtual bool startGame();
+	virtual bool playingGame();
+	virtual bool endGame();
+public:
+	virtual void Run() final;
+	virtual ~DPGamesFramework();
+private:
+	void errorLog(std::string funcName);
 };

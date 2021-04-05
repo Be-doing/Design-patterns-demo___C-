@@ -1,4 +1,4 @@
-/**************************************************************
+ï»¿/**************************************************************
  *  Create by LGC, All Rights Reserved.
  *  Description: 
  *
@@ -8,7 +8,7 @@
 #include <iostream>
 #include "DPStrategy.h"
 double calculate(double left, double right, char symbol, char* error) {
-	// ÑİÊ¾²»×ö°²È«ÅĞ¶Ï
+	// æ¼”ç¤ºä¸åšå®‰å…¨åˆ¤æ–­ 
 	if (symbol == '+') {
 		return left + right;
 	} else if (symbol == '-') {

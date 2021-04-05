@@ -10,6 +10,5 @@
 int main() {
 	DPGamesFramework* cjGame = new DPCjGame();
 	cjGame->Run();
-
 	return 0;
 }

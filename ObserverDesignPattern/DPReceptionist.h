@@ -8,15 +8,16 @@
 #pragma once
 #include "DPBoss.h"
 #include "DPAbstractEmployee.h"
-#include <vector>
+#include <list>
 class DPReceptionist {
 public:
-	DPReceptionist(DPBoss boss);
+	//DPReceptionist();
 	void addObverser(DPAbstractEmployee* observer);
 	void removeObserver(DPAbstractEmployee* observer); 
+	void setBossState(DPBossState state);
 private:
 	void notifyAllObservers();
-
-	std::vector<DPAbstractEmployee*> observers;
+	DPBossState _bossState;
+	std::list<DPAbstractEmployee*> _observers;
 };
 

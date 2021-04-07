@@ -12,12 +12,12 @@ enum class DPBossState {
 	DPBossStateIsSitDown	 // 老板坐下了
 
 };
-class DPBoss {
-public:
-	DPBoss();
-	DPBossState getState();
-	void setState(DPBossState state);
-private:
-	DPBossState _state;
-};
+//class DPBoss {
+//public:
+//	DPBoss();
+//	DPBossState getState();
+//	void setState(DPBossState state);
+//private:
+//	DPBossState _state;
+//};
 

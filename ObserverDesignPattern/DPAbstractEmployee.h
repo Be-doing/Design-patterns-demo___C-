@@ -8,6 +8,7 @@
 #pragma once
 #include "DPBoss.h"
 class DPAbstractEmployee {
+public:
 	virtual void updateWorkWithBossState(DPBossState state) = 0;
 };
 

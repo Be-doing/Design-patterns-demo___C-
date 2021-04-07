@@ -6,15 +6,15 @@
  *  @time: 2021/4/6
  **************************************************************/
 #include "DPBoss.h"
-DPBoss::DPBoss() {
-	_state = DPBossState::DPBossStateIsGone;
-}
-
-DPBossState DPBoss::getState() {
-	return _state;
-}
-
-void DPBoss::setState(DPBossState state) {
-	_state = state;
-}
+//DPBoss::DPBoss() {
+//	_state = DPBossState::DPBossStateIsGone;
+//}
+//
+//DPBossState DPBoss::getState() {
+//	return _state;
+//}
+//
+//void DPBoss::setState(DPBossState state) {
+//	_state = state;
+//}
 

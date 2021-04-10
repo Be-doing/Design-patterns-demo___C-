@@ -8,3 +8,4 @@
 */debug/
 */.vs/
 FactoryDesignPattern/DecoratorDesignPattern/.vs/
+FactoryDesignPattern/*/debug/*

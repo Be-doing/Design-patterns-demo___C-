@@ -5,13 +5,12 @@
  *  @author: https://blog.csdn.net/Void_leng
  *  @time: 2021/4/8
  **************************************************************/
-#include "DPAbstractDecorator.h"
-#include <iostream>
-DPAbstractDecorator::DPAbstractDecorator(DPAbstractHouse* house)
-	:_house(house){
+#pragma once
+#include "DPAbstractHouse.h"
+class DPHouse : public DPAbstractHouse {
+public:
+	// 展示一下构造
+	virtual void showStructure();
 
-}
+};
 
-void DPAbstractDecorator::showStructure() {
-	_house->showStructure();
-}

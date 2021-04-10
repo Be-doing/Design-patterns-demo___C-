@@ -14,6 +14,7 @@ DPGardenDecorator::DPGardenDecorator(DPAbstractHouse* house)
 
 void DPGardenDecorator::showStructure() {
 	std::cout << "带花园" << std::endl;
+	_house->showStructure();
 }
 
 DPSwimmingPoolDecorator::DPSwimmingPoolDecorator(DPAbstractHouse* house)
@@ -22,7 +23,8 @@ DPSwimmingPoolDecorator::DPSwimmingPoolDecorator(DPAbstractHouse* house)
 }
 
 void DPSwimmingPoolDecorator::showStructure() {
-	std::cout << "带花园" << std::endl;
+	std::cout << "带泳池" << std::endl;
+	_house->showStructure();
 }
 
 DPGarageDecorator::DPGarageDecorator(DPAbstractHouse* house)
@@ -32,5 +34,5 @@ DPGarageDecorator::DPGarageDecorator(DPAbstractHouse* house)
 
 void DPGarageDecorator::showStructure() {
 	std::cout << "带车库" << std::endl;
-	
+	_house->showStructure();
 }

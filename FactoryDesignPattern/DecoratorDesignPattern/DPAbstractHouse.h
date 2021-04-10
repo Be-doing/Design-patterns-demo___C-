@@ -7,6 +7,7 @@
  **************************************************************/
 #pragma once
 class DPAbstractHouse {
+public:
 	// 展示一下构造
 	virtual void showStructure() = 0;
 };

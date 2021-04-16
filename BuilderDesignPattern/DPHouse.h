@@ -8,6 +8,7 @@
 #pragma once
 #include <string>
 class DPAbstractHouse {
+public:
 	virtual void showMessage() = 0;
 	virtual void setHostName(std::string hostName) = 0;
 	virtual void setHouseName(std::string houseName) = 0;
@@ -17,11 +18,14 @@ protected:
 };
 
 class DPStoneHouse :public DPAbstractHouse {
+public:
 	virtual void setHostName(std::string hostName);
 	virtual void setHouseName(std::string houseName);
 	virtual void showMessage();
 };
+
 class DPCrystalHouse :public DPAbstractHouse {
+public:
 	virtual void setHostName(std::string hostName);
 	virtual void setHouseName(std::string houseName);
 	virtual void showMessage();

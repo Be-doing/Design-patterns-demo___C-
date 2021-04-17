@@ -9,11 +9,12 @@
 #include "DPHouse.h"
 class DPAbstractBuilder {
 public:
+	// 这些函数主要为了体现创建对象的流程，表示复杂性
 	virtual void setHostName(std::string hostName) = 0;
 	virtual bool buildFoundation() = 0;
 	virtual bool buildTheWall() = 0;
 	virtual bool buildTheRoof() = 0;
-
+	virtual DPAbstractHouse* getHouse();
 protected:
 	DPAbstractHouse* _pHouse;
 };
@@ -21,7 +22,7 @@ protected:
 
 class DPStoneHouseBuilder : public DPAbstractBuilder {
 public:
-	DPStoneHouseBuilder(DPAbstractHouse* pHouse);
+	DPStoneHouseBuilder();
 	virtual void setHostName(std::string hostName);
 	virtual bool buildFoundation();
 	virtual bool buildTheWall();
@@ -32,7 +33,7 @@ protected:
 
 class DPCrystalHouseBuilder : public DPAbstractBuilder {
 public:
-	DPCrystalHouseBuilder(DPAbstractHouse* pHouse);
+	DPCrystalHouseBuilder();
 	virtual void setHostName(std::string hostName);
 	virtual bool buildFoundation();
 	virtual bool buildTheWall();

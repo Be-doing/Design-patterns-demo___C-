@@ -1,7 +1,11 @@
 ﻿#include "DPBuilder.h"
 #include <iostream>
-DPStoneHouseBuilder::DPStoneHouseBuilder(DPAbstractHouse* pHouse) {
-	_pHouse = pHouse;
+
+DPAbstractHouse* DPAbstractBuilder::getHouse() {
+	return _pHouse;
+}
+DPStoneHouseBuilder::DPStoneHouseBuilder() {
+	_pHouse = new DPStoneHouse();
 }
 
 void DPStoneHouseBuilder::setHostName(std::string hostName) {
@@ -10,22 +14,23 @@ void DPStoneHouseBuilder::setHostName(std::string hostName) {
 }
 
 bool DPStoneHouseBuilder::buildFoundation() {
-	std::cout << "石头房子修建了地基" << std::endl;
+	_pHouse->setFoundationMessage(std::string("石头材质的地基"));
 	return true;
 }
 
 bool DPStoneHouseBuilder::buildTheWall() {
-	std::cout << "石头房子修建了墙壁" << std::endl;
+	_pHouse->setWindowsMessage(std::string("四扇普通的窗"));
+	_pHouse->setWallMessage(std::string("石头的墙壁"));
 	return true;
 }
 bool DPStoneHouseBuilder::buildTheRoof() {
-	std::cout << "石头房子修建了屋顶" << std::endl;
+	_pHouse->setRoofMessage(std::string("水泥的屋顶"));
 	return true;
 }
 
 
-DPCrystalHouseBuilder::DPCrystalHouseBuilder(DPAbstractHouse* pHouse) {
-	_pHouse = pHouse;
+DPCrystalHouseBuilder::DPCrystalHouseBuilder() {
+	_pHouse = new DPStoneHouse();
 }
 
 void DPCrystalHouseBuilder::setHostName(std::string hostName) {
@@ -34,15 +39,16 @@ void DPCrystalHouseBuilder::setHostName(std::string hostName) {
 }
 
 bool DPCrystalHouseBuilder::buildFoundation() {
-	std::cout << "水晶房子修建了地基" << std::endl;
+	_pHouse->setFoundationMessage(std::string("蓝宝石地基"));
 	return true;
 }
 
 bool DPCrystalHouseBuilder::buildTheWall() {
-	std::cout << "水晶房子修建了墙壁" << std::endl;
+	_pHouse->setWindowsMessage(std::string("平门窗、推拉窗、折叠窗、转窗、转窗又分为上悬窗、下悬窗、中悬窗、立转窗、百叶窗"));
+	_pHouse->setWallMessage(std::string("水晶墙壁"));
 	return true;
 }
 bool DPCrystalHouseBuilder::buildTheRoof() {
-	std::cout << "水晶房子修建了屋顶" << std::endl;
+	_pHouse->setRoofMessage(std::string("琉璃瓦"));
 	return true;
 }

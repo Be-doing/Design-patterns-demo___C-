@@ -1,4 +1,4 @@
-/**************************************************************
+﻿/**************************************************************
  *  Create by LGC, All Rights Reserved.
  *  Description:
  *
@@ -6,11 +6,8 @@
  *  @time: 4/2
  **************************************************************/
 #include "DPHungrySingle.h"
+// 程序启动慢
 DPHungrySingle* DPHungrySingle::singleObj = new DPHungrySingle();
-
 DPHungrySingle* DPHungrySingle::getSingleObj() {
-	if (singleObj == nullptr) {
-		singleObj = new DPHungrySingle();
-	}
 	return singleObj;
 }

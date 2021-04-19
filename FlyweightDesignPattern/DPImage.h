@@ -10,7 +10,7 @@
 class DPImage {
 	std::string _imageMessage;
 public:
-	DPImage(std::string message);
+	DPImage(std::string message = std::string(""));
 	void showMessage();
 };
 

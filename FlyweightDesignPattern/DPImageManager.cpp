@@ -12,8 +12,8 @@ DPImageManager::DPImageManager() {
 }
 DPImage DPImageManager::getImage(std::string imageID) {
 	std::unordered_map<std::string, DPImage>::iterator item = _imageMap.find(imageID);
-	if (item != _imageMap.end()) {
-		return _imageMap[imageID];
+	if (item == _imageMap.end()) {
+		_imageMap[imageID] = DPImage(imageID);
 	}
-	_imageMap[imageID] = DPImage(imageID);
+	return _imageMap[imageID];
 }

@@ -1,13 +1,8 @@
 ﻿/**************************************************************
  *  Create by LGC, All Rights Reserved.
- *  Description: 
+ *  Description:
  *
  *  @author: https://blog.csdn.net/Void_leng
- *  @time: 2021/4/18
+ *  @time: 2021/4/20
  **************************************************************/
-#include "DPImageManager.h"
-int main() {
-	DPImage image = DPImageManager().getImage(std::string("风景"));
-	image.showMessage();
-	return 0;
-}
+#include "DPUtility.h"

@@ -3,11 +3,10 @@
  *  Description: 
  *
  *  @author: https://blog.csdn.net/Void_leng
- *  @time: 2021/4/18
+ *  @time: 2021/4/20
  **************************************************************/
-#include "DPImageManager.h"
+#include <stdio.h>
 int main() {
-	DPImage image = DPImageManager().getImage(std::string("风景"));
-	image.showMessage();
+
 	return 0;
 }

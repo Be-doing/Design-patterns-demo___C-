@@ -6,7 +6,13 @@
  *  @time: 2021/4/20
  **************************************************************/
 #include <stdio.h>
-int main() {
+#include "DPUtility.h"
 
+void downloadCallBack(DPError* error, DPResponse* response) {
+
+}
+int main() {
+	DPRequest req;
+	DPUtility::download(&req, "www.baidu.com/xxx", "/user/admin/desktop/", &downloadCallBack);
 	return 0;
 }

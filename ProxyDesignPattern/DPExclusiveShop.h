@@ -11,14 +11,15 @@ struct Cosmetic {
 	std::string _name;
 	std::string _commodityCode;
 };
+class DPCustomer;
 class DPAbstactExclusive {
 public:
-	virtual Cosmetic getExclusive(const std::string& exclusiveName) = 0;
+	virtual Cosmetic getExclusive(DPCustomer* customer, const std::string& exclusiveName) = 0;
 };
 
 
 class DPPurchasingAgent : public DPAbstactExclusive {
 public:
-	virtual Cosmetic getExclusive(const std::string& exclusiveName);
+	virtual Cosmetic getExclusive(DPCustomer* customer, const std::string& exclusiveName);
 };
 

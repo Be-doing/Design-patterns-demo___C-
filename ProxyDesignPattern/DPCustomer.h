@@ -12,6 +12,7 @@ class DPCustomer {
 	DPAbstactExclusive* _delegate;
 public:
 	DPCustomer(std::string name, DPAbstactExclusive* delegate);
+	std::string getName();
 	void boughtExclusive(const std::string& exclusiveName);
 };
 

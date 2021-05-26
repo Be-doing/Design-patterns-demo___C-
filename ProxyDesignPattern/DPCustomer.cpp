@@ -12,8 +12,13 @@ DPCustomer::DPCustomer(std::string name, DPAbstactExclusive* delegate)
 ,_delegate(delegate){
 
 }
+
+std::string DPCustomer::getName() {
+	return _name;
+}
+
 void DPCustomer::boughtExclusive(const std::string& exclusiveName) {	
-	Cosmetic cosmetic = _delegate->getExclusive(exclusiveName);
+	Cosmetic cosmetic = _delegate->getExclusive(this, exclusiveName);
 	std::cout << "[" << _name << "] bought a cosmetic\n";
-	std::cout << "[" << cosmetic._name << " : " << cosmetic._commodityCode << "\n";
+	std::cout << "[" << cosmetic._name << " : " << cosmetic._commodityCode << "]\n";
 }

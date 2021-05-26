@@ -8,15 +8,18 @@
 #include "DPExclusiveShop.h"
 #include <iostream>
 #include <time.h>  
+#include <iomanip>
+#include <ctime>
+#include "DPCustomer.h"
 
-Cosmetic DPPurchasingAgent::getExclusive(const std::string& exclusiveName) {
+Cosmetic DPPurchasingAgent::getExclusive(DPCustomer* customer, const std::string& exclusiveName) {
 	// …………
 	// 复杂的此操作
 	// 飘洋过海………………等等
 	// …………
 	Cosmetic cosmetic;
 	cosmetic._name = exclusiveName;
-	time_t myt = time(NULL);
-	cosmetic._commodityCode = ctime(&myt);
+	cosmetic._commodityCode = exclusiveName + "code";
+	std::cout << "Purchasing " << exclusiveName << " to " << customer->getName() << "\n";
 	return cosmetic;
 }

@@ -7,14 +7,18 @@
  **************************************************************/
 #pragma once
 #include <string>
+struct Cosmetic {
+	std::string _name;
+	std::string _commodityCode;
+};
 class DPAbstactExclusive {
 public:
-	virtual void getExclusive(const std::string& exclusiveName) = 0;
+	virtual Cosmetic getExclusive(const std::string& exclusiveName) = 0;
 };
 
 
-class DPExclusiveShop : public DPAbstactExclusive {
+class DPPurchasingAgent : public DPAbstactExclusive {
 public:
-	virtual void getExclusive(const std::string& exclusiveName);
+	virtual Cosmetic getExclusive(const std::string& exclusiveName);
 };
 

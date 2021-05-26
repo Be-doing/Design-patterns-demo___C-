@@ -7,11 +7,11 @@
  **************************************************************/
 #pragma once
 #include "DPExclusiveShop.h"
-class DPPurchasingAgent : public DPAbstactExclusive {
+class DPCustomer {
+	std::string _name;
+	DPAbstactExclusive* _delegate;
 public:
-	DPPurchasingAgent();
-	virtual void getExclusive(const std::string& exclusiveName);
-private:
-	DPExclusiveShop* _shop;
+	DPCustomer(std::string name, DPAbstactExclusive* delegate);
+	void boughtExclusive(const std::string& exclusiveName);
 };
 

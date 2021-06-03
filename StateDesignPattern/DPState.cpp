@@ -6,7 +6,7 @@
  *  @time: 2021/5/6
  **************************************************************/
 #include "DPState.h"
-
+#include "DPFileMessage.h"
 
 std::string DPInitialState::stateTitle() {
 	return std::string("下载");
@@ -37,4 +37,27 @@ DPState* DPCompleteState::getNextState() {
 		_nextState = new DPInitialState();
 	}
 	return _nextState;
+}
+
+
+std::string DPNetworkStateWIFI::descriptionString() {
+	return std::string("wifi");
+}
+void DPNetworkStateWIFI::doAction(Context& context) {
+	context.setNetworkState(this);
+}
+
+
+std::string DPNetworkStateCellular::descriptionString() {
+	return std::string("蜂窝数据");
+}
+void DPNetworkStateCellular::doAction(Context& context) {
+	context.setNetworkState(this);
+}
+
+std::string DPNetworkStateUnknow::descriptionString() {
+	return std::string("unknow");
+}
+void DPNetworkStateUnknow::doAction(Context& context) {
+	context.setNetworkState(this);
 }

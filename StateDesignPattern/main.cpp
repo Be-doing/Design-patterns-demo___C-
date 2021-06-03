@@ -7,10 +7,24 @@
  **************************************************************/
 #include "DPFileMessage.h"
 int main() {
-	DPFileMessage message;
-	message.showFileState();
+//	DPFileMessage message;
+//	message.showFileState();
 
-	message.messageStateChange();
-	message.showFileState();
+//	message.messageStateChange();
+//	message.showFileState();
+
+	Context context;
+	DPNetworkState* state = new DPNetworkStateWIFI();
+	state->doAction(context);
+	context.printState();
+
+	state = new DPNetworkStateCellular();
+	state->doAction(context);
+	context.printState();
+
+	state = new DPNetworkStateUnknow();
+	state->doAction(context);
+	context.printState();
+
 	return 0;
 }

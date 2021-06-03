@@ -16,3 +16,10 @@ public:
 	void messageStateChange();
 };
 
+class Context {
+protected:
+	DPNetworkState* _networkState;
+public:
+	void setNetworkState(DPNetworkState* networkState);
+	void printState();
+};

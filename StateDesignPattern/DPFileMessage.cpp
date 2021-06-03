@@ -19,3 +19,14 @@ void DPFileMessage::showFileState() {
 void DPFileMessage::messageStateChange() {
 	_fileState = _fileState->getNextState();
 }
+
+
+
+
+
+void Context::setNetworkState(DPNetworkState* networkState) {
+	_networkState = networkState;
+}
+void Context::printState() {
+	std::cout << _networkState->descriptionString() << std::endl;
+}

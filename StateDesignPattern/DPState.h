@@ -32,3 +32,28 @@ public:
 	virtual std::string stateTitle();
 	virtual DPState* getNextState();
 };
+
+class Context;
+class DPNetworkState {
+public:
+	virtual void doAction(Context& context) = 0;
+	virtual std::string descriptionString() = 0;
+};
+
+class DPNetworkStateWIFI : public DPNetworkState {
+public:
+	virtual void doAction(Context& context);
+	virtual std::string descriptionString();
+};
+
+class DPNetworkStateCellular : public DPNetworkState {
+public:
+	virtual void doAction(Context& context);
+	virtual std::string descriptionString();
+};
+
+class DPNetworkStateUnknow : public DPNetworkState {
+public:
+	virtual void doAction(Context& context);
+	virtual std::string descriptionString();
+};

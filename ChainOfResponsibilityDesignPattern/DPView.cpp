@@ -17,10 +17,12 @@ DPView* DPView::hitTest(DPPoint point) {
 	if (!pointInsideRect(point, this->_frame)) {
 		return nullptr;
 	}
+	DPView* resView = nullptr;
 	for (auto& view : _subViews) {
-		if (pointInsideRect(point, view->_frame)) {
+		resView = view->hitTest(point);
+		if (resView) {
 			std::cout << view->_viewId << std::endl;
-			return view;
+			return resView;
 		}
 	}
 	std::cout << this->_viewId << std::endl;

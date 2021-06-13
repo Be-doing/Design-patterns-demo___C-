@@ -6,13 +6,16 @@
  *  @time: 2021/5/9
  **************************************************************/
 #pragma once
-#include <string>
-using std::string;
-class DPCommand {
-protected:
-	string _info;
+#include <vector>
+#include "DPSubCommand.h"
+
+using std::vector;
+class DPInvoker {
+	vector<DPCommand*> _comList;
+
 public:
-	virtual string info() = 0;
-	virtual void execute() = 0;
+	void execute(DPCommand* cmd);
+	void showHistoryCommand();
+	void executeCmdWithIndex(size_t index);
 };
 

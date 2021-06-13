@@ -14,6 +14,7 @@ class DPLsCommad :public DPCommand {
 	std::string _arg;
 public:
 	DPLsCommad(std::string arg = "");
+	virtual string info();
 	virtual void execute();
 };
 
@@ -22,11 +23,14 @@ class DPCdCommad :public DPCommand {
 	std::string _arg;
 public:
 	DPCdCommad(std::string arg = "");
+	virtual string info();
 	virtual void execute();
 };
 
 class DPPwdCommad :public DPCommand {
 	DPShell _shell;
 public:
+	DPPwdCommad();
+	virtual string info();
 	virtual void execute();
 };

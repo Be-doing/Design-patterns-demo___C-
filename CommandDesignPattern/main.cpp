@@ -5,12 +5,14 @@
  *  @author: https://blog.csdn.net/Void_leng
  *  @time: 2021/5/9
  **************************************************************/
-#include "DPSubCommand.h"
+#include "DPInvoker.h"
 int main() {
 
 	DPCommand* lsCmd = new DPLsCommad();
-	lsCmd->execute();
-
+	
+	DPInvoker invoker;
+	invoker.execute(lsCmd);
+	invoker.showHistoryCommand();
 
 
 	return 0;

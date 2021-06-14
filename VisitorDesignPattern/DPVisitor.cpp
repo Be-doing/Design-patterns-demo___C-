@@ -6,28 +6,27 @@
  *  @time: 2021/5/9
  **************************************************************/
 #include "DPVisitor.h"
-#include "DPCategory.h"
 #include <stdio.h>
 
-void DPVisitorA::visitorCategoryA(DPCategory& category) {
+void DPVisitorMom::visitorFreshkeeping(DPFreezer& freezer) {
 	// 添加的操作
-	printf("DPVisitorA::visitorCategoryA(DPCategory& category)\n");
+	printf("妈妈访问了保鲜层，展示蔬菜\n");
 }
 
-void DPVisitorA::visitorCategoryB(DPCategory& category) {
+void DPVisitorMom::visitorRefrigeration(DPFreezer& freezer) {
 	// 添加的操作
-	printf("DPVisitorA::visitorCategoryB(DPCategory& category)\n");
+	printf("妈妈访问了冷藏层，展示肉食、饺子\n");
 }
 
 
-void DPVisitorB::visitorCategoryA(DPCategory& category) {
+void DPVisitorKids::visitorFreshkeeping(DPFreezer& freezer) {
 	// 添加的操作
-	printf("DPVisitorB::visitorCategoryA(DPCategory& category)\n");
+	printf("孩子访问了保鲜层，展示牛奶，果汁\n");
 }
 
-void DPVisitorB::visitorCategoryB(DPCategory& category) {
+void DPVisitorKids::visitorRefrigeration(DPFreezer& freezer) {
 	// 添加的操作
-	printf("DPVisitorB::visitorCategoryB(DPCategory& category)\n");
+	printf("孩子访问了冷藏层，展示冰淇淋\n");
 }
 
 // 如果要继续添加的操作

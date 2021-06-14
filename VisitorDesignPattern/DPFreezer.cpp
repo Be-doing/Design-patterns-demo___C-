@@ -5,13 +5,15 @@
  *  @author: https://blog.csdn.net/Void_leng
  *  @time: 2021/5/9
  **************************************************************/
-#include "DPCategory.h"
+#include "DPFreezer.h"
 #include "DPVisitor.h"
 
-void DPCategoryA::accept(DPVisitor& visitor) {
-	visitor.visitorCategoryA(*this);
+
+
+void DPFreshkeeping::accept(DPVisitor& visitor) {
+	visitor.visitorFreshkeeping(*this);
 }
 
-void DPCategoryB::accept(DPVisitor& visitor) {
-	visitor.visitorCategoryB(*this);
+void DPRefrigeration::accept(DPVisitor& visitor) {
+	visitor.visitorRefrigeration(*this);
 }

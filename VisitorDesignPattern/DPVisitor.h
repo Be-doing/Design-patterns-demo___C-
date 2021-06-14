@@ -6,22 +6,22 @@
  *  @time: 2021/5/9
  **************************************************************/
 #pragma once
-class DPCategory;
+class DPFreezer;
 class DPVisitor{
 public:
-	virtual void visitorCategoryA(DPCategory& category) = 0;
-	virtual void visitorCategoryB(DPCategory& category) = 0;
+	virtual void visitorFreshkeeping(DPFreezer& freezer) = 0;
+	virtual void visitorRefrigeration(DPFreezer& freezer) = 0;
 };
 
-class DPVisitorA : public DPVisitor {
+class DPVisitorMom : public DPVisitor {
 public:
-	virtual void visitorCategoryA(DPCategory& category);
-	virtual void visitorCategoryB(DPCategory& category);
+	virtual void visitorFreshkeeping(DPFreezer& freezer);
+	virtual void visitorRefrigeration(DPFreezer& freezer);
 };
 
 
-class DPVisitorB : public DPVisitor {
+class DPVisitorKids : public DPVisitor {
 public:
-	virtual void visitorCategoryA(DPCategory& category);
-	virtual void visitorCategoryB(DPCategory& category);
+	virtual void visitorFreshkeeping(DPFreezer& freezer);
+	virtual void visitorRefrigeration(DPFreezer& freezer);
 };

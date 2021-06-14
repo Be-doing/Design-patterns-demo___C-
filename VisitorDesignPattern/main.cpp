@@ -6,20 +6,20 @@
  *  @time: 2021/5/9
  **************************************************************/
 #include "DPVisitor.h"
-#include "DPCategory.h"
+#include "DPFreezer.h"
 int main() {
 
-	DPCategory* categoryA = new DPCategoryA();
-	DPCategory* categoryB = new DPCategoryB();
+	DPFreezer* freshkeeping = new DPFreshkeeping();
+	DPFreezer* refrigeration = new DPRefrigeration();
 
-	DPVisitor* visitorA = new DPVisitorA();
-	DPVisitor* visitorB = new DPVisitorB();
+	DPVisitor* mom = new DPVisitorMom();
+	DPVisitor* kid = new DPVisitorKids();
 
 
-	categoryA->accept(*visitorA);
-	categoryA->accept(*visitorB);
-	categoryB->accept(*visitorA);
-	categoryB->accept(*visitorB);
+	freshkeeping->accept(*mom);
+	freshkeeping->accept(*kid);
+	refrigeration->accept(*mom);
+	refrigeration->accept(*kid);
 
 	return 0;
 }
